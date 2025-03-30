@@ -1,0 +1,46 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card-title {
+    color: #4C4BEB;
+}
+
+.form-select {
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #4C4BEB;
+    border-color: #4C4BEB;
+}
+
+.btn-primary:hover {
+    background-color: #3e3cb1;
+    border-color: #3e3cb1;
+}
+
+h1 {
+    color: #fff;
+}
+
+.card-body {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 0 10px;
+    }
+}

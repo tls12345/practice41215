@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로봇 부품 추천 웹앱</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SweetAlert2 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+
+    <div class="container mt-5">
+        <div class="text-center text-white">
+            <h1 class="text-4xl font-extrabold leading-tight">로봇 부품 추천 웹앱</h1>
+            <p class="text-lg mt-2">원하는 움직임을 선택하여 부품을 추천받아보세요!</p>
+        </div>
+
+        <div class="row mt-8 justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-xl border-0 rounded-lg">
+                    <div class="card-body bg-white p-6">
+                        <h5 class="card-title text-center text-2xl font-semibold mb-4">움직이기 기능 설정</h5>
+
+                        <div class="mb-4">
+                            <label for="movementType" class="form-label text-lg">어떤 방식으로 움직이기를 원하나요?</label>
+                            <select class="form-select form-select-lg" id="movementType">
+                                <option value="직선 이동">직선 이동</option>
+                                <option value="회전">회전</option>
+                                <option value="복잡한 경로">복잡한 경로</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="speed" class="form-label text-lg">속도 설정</label>
+                            <select class="form-select form-select-lg" id="speed">
+                                <option value="빠른">빠른</option>
+                                <option value="중간">중간</option>
+                                <option value="느림">느림</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primary w-full py-3 text-xl" id="getRecommendationBtn">부품 추천 받기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/dist/sweetalert2.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
